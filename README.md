@@ -65,6 +65,40 @@
     </p>
 <p><b>Bandit Level 11 → Level 12</b>
   <br>ssh bandit11@bandit.labs.overthewire.org -p 2220
-  <br>cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' #rot13
+  <br>cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
   <br>5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+    </p>
+<p><b>Bandit Level 12 → Level 13</b>
+  <br>ssh bandit12@bandit.labs.overthewire.org -p 2220
+  <br>mkdir /tmp/new_dir
+  <br>cp data.txt /tmp/new_dir
+  <br>cd /tmp/new_dir
+  <br>xxd -r data.txt > data
+  <br>file data
+  <br>mv data data.gz
+  <br>gzip -d data.gz
+  <br>file data
+  <br>mv data data.bz2
+  <br>bzip2 -d data.bz2
+  <br>file data
+  <br>mv data data.gz
+  <br>gzip -d data.gz
+  <br>file data
+  <br>mv data data.tar
+  <br>tar -xvf data.tar
+  <br>file data5.bin
+  <br>mv data5.bin data.tar
+  <br>tar -xvf data.tar
+  <br>file data6.bin
+  <br>mv data6.bin data.bz2
+  <br>bzip2 -d data.bz2
+  <br>file data
+  <br>mv data data.tar
+  <br>tar -xvf data.tar
+  <br>file data8.bin
+  <br>mv data8.bin data.gz
+  <br>gzip -d data.gz
+  <br>file data
+  <br>cat data
+  <br>8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
     </p>
