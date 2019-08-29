@@ -31,3 +31,25 @@
   <br>file -m inhere/
   <br>koReBOKuIDDepwhWk7jZC0RTdopnAYKh
     </p>
+<p><b>Bandit Level 5 → Level 6</b>
+  <br>ssh bandit5@bandit.labs.overthewire.org -p 2220
+  <br>find inhere/ -type f -size 1033c
+  <br>cat [filepath]
+  <br>DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+    </p>
+<p><b>Bandit Level 6 → Level 7</b>
+  <br>ssh bandit6@bandit.labs.overthewire.org -p 2220
+  <br>find / -type f -user bandit7 -group bandit6 -size 33c [-ls]
+  <br>cat 'filepath'
+  <br>HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+    </p>
+<p><b>Bandit Level 7 → Level 8</b>
+  <br>ssh bandit7@bandit.labs.overthewire.org -p 2220
+  <br>grep -n millionth data.txt 
+  <br>cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+    </p>
+<p><b>Bandit Level 8 → Level 9</b>
+  <br>ssh bandit8@bandit.labs.overthewire.org -p 2220
+  <br>sort data.txt | uniq -u
+  <br>UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+    </p>
