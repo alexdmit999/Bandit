@@ -53,3 +53,18 @@
   <br>sort data.txt | uniq -u
   <br>UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
     </p>
+<p><b>Bandit Level 9 → Level 10</b>
+  <br>ssh bandit9@bandit.labs.overthewire.org -p 2220
+  <br>strings -a data.txt
+  <br>truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+    </p>
+<p><b>Bandit Level 10 → Level 11</b>
+  <br>ssh bandit10@bandit.labs.overthewire.org -p 2220
+  <br>cat data.txt | base64 -d
+  <br>IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+    </p>
+<p><b>Bandit Level 11 → Level 12</b>
+  <br>ssh bandit11@bandit.labs.overthewire.org -p 2220
+  <br>cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' #rot13
+  <br>5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+    </p>
