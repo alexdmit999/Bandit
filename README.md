@@ -102,3 +102,61 @@
   <br>cat data
   <br>8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
     </p>
+<p><b>Bandit Level 13 → Level 14</b>
+  <br>ssh bandit13@bandit.labs.overthewire.org -p 2220
+  <br>cat sshkey.private
+  <br>copy the KEY and save it to your PC with nano/vim
+  <br>close bandit13 connection
+  <br>chmod 600 KEY
+  <br>ssh -i KEY bandit14@bandit.labs.overthewire.org -p 2220
+  <br>4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+    </p>
+<p><b>Bandit Level 14 → Level 15</b>
+  <br>ssh bandit14@bandit.labs.overthewire.org -p 2220
+  <br>cat /etc/bandit_pass/bandit14
+  <br>echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc localhost 30000
+  <br>BfMYroe26WYalil77FoDi9qh59eK5xNr
+    </p>
+<p><b>Bandit Level 15 → Level 16</b>
+  <br>ssh bandit15@bandit.labs.overthewire.org -p 2220
+  <br>cat /etc/bandit_pass/bandit15 | openssl s_client -connect localhost:30001 -quiet
+  <br>cluFn7wTiGryunymYOu4RcffSxQluehd
+    </p>
+<p><b>Bandit Level 16 → Level 17</b>
+  <br>ssh bandit16@bandit.labs.overthewire.org -p 2220
+  <br>nmap localhost -p31000-32000 OR you can use nc -zv localhost 31000-32000 result is the same
+  <br>with "echo test | nc -v localhost <'port'>" find the two SSL use ports 31790 and 31518 (they don't answer)
+  <br>get RSA_PRIVATE_KEY and save it to your PC
+  <br>chmod 600 RSA_PRIVATE_KEY
+  <br>xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+    </p>
+<p><b>Bandit Level 17 → Level 18</b>
+  <br>ssh bandit17@bandit.labs.overthewire.org -p 2220
+  <br>diff passwords.new passwords.old 
+  <br>kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+    </p>
+<p><b>Bandit Level 18 → Level 19</b>
+  <br>ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+  <br>ls
+  <br>cat readme 
+  <br>IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+    </p>
+<p><b>Bandit Level 19 → Level 20</b>
+  <br>ssh bandit19@bandit.labs.overthewire.org -p 2220
+  <br>./bandit20-do cat /etc/bandit_pass/bandit20
+  <br>GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+    </p>
+<p><b>Bandit Level 20 → Level 21</b>
+  <br>ssh bandit20@bandit.labs.overthewire.org -p 2220
+  <br>terminal1: echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j | nc -l -p 9999
+  <br>terminal2: ./suconnect 9999
+  <br>gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+    </p>
+<p><b>Bandit Level 21 → Level 22</b>
+  <br>ssh bandit21@bandit.labs.overthewire.org -p 2220
+  <br>cron + tab -> will see "cronjob_bandit22.sh  cronjob_bandit23.sh  crontab"
+  <br>cronjob_bandit22.sh -> chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
+/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
+  <br>cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+  <br>Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+    </p>
