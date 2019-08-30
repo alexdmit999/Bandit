@@ -185,7 +185,7 @@
   <br>chmod -R 777 /tmp/dir_name
   <br>cp script.sh /var/spool/bandit24/
   <br>ls
-  <br>#script.sh  password
+  <br>>#script.sh  password
   <br>cat password
   <br>UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
     </p>
