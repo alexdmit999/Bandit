@@ -155,8 +155,9 @@
 <p><b>Bandit Level 21 → Level 22</b>
   <br>ssh bandit21@bandit.labs.overthewire.org -p 2220
   <br>cron + tab -> will see "cronjob_bandit22.sh  cronjob_bandit23.sh  crontab"
-  <br>cronjob_bandit22.sh -> chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
-/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
+  <br>cronjob_bandit22.sh
+  <br>#chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
+  <br>#/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
   <br>cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
   <br>Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
     </p>
