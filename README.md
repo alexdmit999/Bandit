@@ -141,9 +141,9 @@ cluFn7wTiGryunymYOu4RcffSxQluehd
   
 **Bandit Level 16 → Level 17**  
 ssh bandit16@bandit.labs.overthewire.org -p 2220  
-nmap localhost -p31000-32000 OR you can use nc -zv localhost 31000-32000 result is the same  
-with "echo test | nc -v localhost <'port'>" find the two SSL use ports 31790 and 31518 (they don't answer)  
-get RSA_PRIVATE_KEY and save it to your PC  
+nmap localhost -p31000-32000 `OR you can use` nc -zv localhost 31000-32000 `result is the same`  
+`with` echo test | nc -v localhost <'port'> `find the two SSL use ports 31790 and 31518 (they don't answer)`  
+`get RSA_PRIVATE_KEY and save it to your PC`  
 chmod 600 RSA_PRIVATE_KEY  
 xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
   
@@ -169,20 +169,20 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
   
 **Bandit Level 20 → Level 21**  
 ssh bandit20@bandit.labs.overthewire.org -p 2220  
-terminal1: echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j | nc -l -p 9999  
-terminal2: ./suconnect 9999  
+`terminal1:` echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j | nc -l -p 9999  
+`terminal2:` ./suconnect 9999  
 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  
   
   
 **Bandit Level 21 → Level 22**  
 ssh bandit21@bandit.labs.overthewire.org -p 2220  
-cron + tab  
-#cronjob_bandit22.shcronjob_bandit23.shcrontab  
+`cron + tab`  
+`cronjob_bandit22.shcronjob_bandit23.shcrontab`  
 cronjob_bandit22.sh  
-```  
+`
 chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted  
 /usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied  
-```  
+`  
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv  
 Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI  
   
@@ -205,15 +205,15 @@ cat /usr/bin/cronjob_bandit24.sh
 mkdir /tmp/dir_name  
 cd /tmp/dir_name  
 vim script.sh  
-```  
+`
 #!/bin/sh  
 cat /etc/bandit_pass/bandit24 > /tmp/dir_name/password  
-```  
+`  
 chmod 777 script.sh  
 chmod -R 777 /tmp/dir_name  
 cp script.sh /var/spool/bandit24/  
 ls  
-#script.shpassword  
+`script.shpassword`  
 cat password  
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ  
   
