@@ -283,8 +283,27 @@ git log
 we need to check out if there another branches
 ```  
 git branch -r  
-git checlout dev  
+git checkout dev  
 cat README.md  
 5b90576bedb2cc04c86a9e924ce42faf
+
+
+**Bandit Level 30 → Level 31**  
+ssh bandit29@bandit.labs.overthewire.org -p 2220  
+mkdir /tmp/dirname  
+cd /tmp/dirname  
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo  
+cd repo/  
+cat README.md  
+git tag  
+git show secret  
+47e603bb428404d265f59c42920d81e5  
+
+
+32  
+56a9bf19c63d650ce78e6ec0354ee45e
+
+33  
+c9c3199ddf4121b10cf581a98d51caee
 
 
