@@ -233,3 +233,42 @@ for i in {0000..9999}
 ```  
 cat passlist.txt | nc localhost 30002  
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG  
+
+
+**Bandit Level 25 → Level 26**  
+ssh bandit25@bandit.labs.overthewire.org -p 2220  
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z  
+
+
+**Bandit Level 26 → Level 27**  
+ssh bandit26@bandit.labs.overthewire.org -p 2220  
+3ba3118a22e93127a4ed485be72ef5ea  
+
+
+**Bandit Level 27 → Level 28**  
+ssh bandit27@bandit.labs.overthewire.org -p 2220  
+```
+mkdir /tmp/dirname  
+cd /tmp/dirname  
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo  
+cd repo/  
+cat README  
+0ef186ac70e04ea33b4c1853d2526fa2  
+```  
+
+
+**Bandit Level 28 → Level 29**  
+ssh bandit28@bandit.labs.overthewire.org -p 2220  
+```
+mkdir /tmp/dirname  
+cd /tmp/dirname  
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo  
+cd repo/  
+cat README.md  
+git log  
+```
+we need the commit before "fix info leak"
+```  
+git checkout 186a1038cc54d1358d42d468cdc8e3cc28a93fcb  
+cat README.md  
+bbc96594b4e001778eee9975372716b2  
