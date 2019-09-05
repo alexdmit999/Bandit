@@ -247,14 +247,12 @@ ssh bandit26@bandit.labs.overthewire.org -p 2220
 
 **Bandit Level 27 → Level 28**  
 ssh bandit27@bandit.labs.overthewire.org -p 2220  
-```
 mkdir /tmp/dirname  
 cd /tmp/dirname  
 git clone ssh://bandit27-git@localhost/home/bandit27-git/repo  
 cd repo/  
 cat README  
 0ef186ac70e04ea33b4c1853d2526fa2  
-```  
 
 
 **Bandit Level 28 → Level 29**  
