@@ -269,3 +269,22 @@ we need the commit before "fix info leak"
 git checkout 186a1038cc54d1358d42d468cdc8e3cc28a93fcb  
 cat README.md  
 bbc96594b4e001778eee9975372716b2  
+
+
+**Bandit Level 29 → Level 30**  
+ssh bandit29@bandit.labs.overthewire.org -p 2220  
+mkdir /tmp/dirname  
+cd /tmp/dirname  
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo  
+cd repo/  
+cat README.md  
+git log  
+```
+we need to check out if there another branches
+```  
+git branch -r  
+git checlout dev  
+cat README.md  
+5b90576bedb2cc04c86a9e924ce42faf
+
+
